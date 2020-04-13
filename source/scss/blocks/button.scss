@@ -1,0 +1,65 @@
+.button {
+  display: block;
+  // align-items: center;
+  // justify-content: center;
+  height: 48px;
+  padding: 15px 40px;
+
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+
+  color: #ffffff;
+
+  background-color: #00adef;
+  border: none;
+  border-radius: 24px;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #4687e0;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #4687e0;
+  }
+
+  &:active {
+    background-color: #0054a6;
+    color: #888;
+    fill: #888;
+  }
+
+  &--white {
+    color: #000000;
+
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+  }
+
+  &--white:hover {
+    color: #00adef;
+    border-color: #00adef;
+    background-color: #ffffff;
+  }
+
+  &--white:focus {
+    color: #00adef;
+    border-color: #00adef;
+    background-color: #ffffff;
+  }
+
+  &--white:active {
+    color: #0054a6;
+    border-color: #0054a6;
+    fill: #0054a6;
+  }
+
+  &:disabled {
+    background-color: #dddddd;
+  }
+}
