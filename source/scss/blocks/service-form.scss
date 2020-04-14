@@ -1,0 +1,133 @@
+.service-form {
+  @include container;
+
+  &__content {
+    width: 810px;
+    padding: 60px;
+
+    background-color: #f6f6f6;
+  }
+}
+
+.service-form form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-form__label {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+
+  &.js--error {
+    color: #ff0000;
+  }
+}
+
+.service-form__input,
+.service-form__text {
+  padding: 0 15px;
+
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+
+  font-size: 15px;
+  line-height: 16px;
+
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    border-color: #00adef;
+    outline: none;
+  }
+
+  &.js--wrong-input {
+    border-color: #ff0000;
+  }
+}
+
+.service-form__input {
+  width: 335px;
+  height: 48px;
+}
+
+.service-form__text {
+  width: 690px;
+  height: 96px;
+
+  resize: none;
+}
+
+.service-form__agreement-wrapper {
+  padding-left: 48px;
+  margin-bottom: 50px;
+}
+
+.service-form__agreement-wrapper input:checked + .service-form__text-wrapper label::before {
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon_checked.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% left 50%;
+}
+
+.service-form__text-wrapper {
+  position: relative;
+
+  font-size: 13px;
+  line-height: 15px;
+
+  &.js--error {
+    color: #ff0000;
+  }
+}
+
+.service-form__agreement-wrapper label {
+  font-weight: 300;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: -48px;
+
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+
+    border-radius: 2px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+  }
+
+  &:hover::before {
+    cursor: pointer;
+    border-color: #00adef;
+  }
+
+  &.js--wrong-input::before {
+    border-color: #ff0000;
+  }
+}
+
+.service-form input[name="agreement"]:focus + div label::before {
+  border-color: #00adef;
+}
+
+.service-form__agreement-wrapper a {
+  @include link-reset;
+
+  display: block;
+
+  font-weight: 400;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

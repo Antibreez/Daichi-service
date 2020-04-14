@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="fonts/GothamPro.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/GothamPro-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="css/style.min.css" type="text/css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script> -->
 </head>
 
 <body>
@@ -44,6 +47,82 @@
             <a class="service__item-link  button">Найти ближайший</a>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="service-contacts">
+      <div class="service-contacts__container">
+        <h2 class="service-contacts__title">Как с нами связаться?</h2>
+        <p class="service-contacts__mail-title">По электронной почте</p>
+        <a class="service-contacts__mail" href="mailto:service@daichi.ru">service@daichi.ru</a>
+        <p class="service-contacts__phone-title">Звонок на бесплатный номер телефона</p>
+        <a class="service-contacts__phone" href="tel:+78002014584">+7 (800) 201-45-84</a>
+      </div>
+    </section>
+    <section class="service-form">
+      <div class="service-form__content">
+        <h2 class="service-form__title">Принимаем обращения 24/7</h2>
+        <p class="service-form__desc">
+          Оставьте свою заявку и наши специалисты свяжутся с Вами в ближайшее время!
+        </p>
+        <form>
+          <label>
+            <p class="service-form__label">Имя*</p>
+            <input class="service-form__input" type="text" name="name" required>
+          </label>
+          <label>
+            <p class="service-form__label">Фамилия*</p>
+            <input class="service-form__input" type="text" name="surname" required>
+          </label>
+          <label>
+            <p class="service-form__label">Отчество</p>
+            <input class="service-form__input" type="text" name="patronymic">
+          </label>
+          <label>
+            <p class="service-form__label">Телефон*</p>
+            <input class="service-form__input" type="text" name="phone" required>
+          </label>
+          <label>
+            <p class="service-form__label">E-mail*</p>
+            <input class="service-form__input" type="email" name="email" required>
+          </label>
+          <label>
+            <p class="service-form__label">Город*</p>
+            <select class="service-form__input  js-example-basic-single" name="city" required>
+              <option></option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint-Petesburg">Санкт-Петербург</option>
+            </select>
+          </label>
+          <label>
+            <p class="service-form__label">Причина обращения*</p>
+            <textarea class="service-form__text" required></textarea>
+          </label>
+
+          <div class="service-form__agreement-wrapper">
+            <input class="visually-hidden" type="checkbox" name="agreement" id="agreement">
+            <div class="service-form__text-wrapper">
+              <label for="agreement">Я подтверждаю согласие на обработку, хранение и использование персональных данных.</label>
+              <a class="service-form__agreement-link" href="#">Подробнее об обработке и хранении персональных данных</a>
+            </div>
+          </div>
+          <button type="submit">Отправить заявку</button>
+        </form>
       </div>
     </section>
   </main>

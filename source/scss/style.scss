@@ -1,6 +1,8 @@
 // vendor
 @import "vendor/normalize.scss";
 @import "vendor/swiper.scss";
+@import "vendor/jquery.mCustomScrollbar.scss";
+@import "vendor/select2.scss";
 
 // general
 @import "general/variables.scss";
@@ -10,5 +12,8 @@
 
 // blocks
 @import "blocks/button.scss";
+@import "blocks/select.scss";
 @import "blocks/warranty-registration.scss";
 @import "blocks/service.scss";
+@import "blocks/service-contacts.scss";
+@import "blocks/service-form.scss";
