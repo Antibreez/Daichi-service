@@ -82,3 +82,39 @@
     margin: 0 auto;
   }
 }
+
+@include desktop-medium {
+  .service {
+    padding-top: 80px;
+
+    &__title {
+      margin-bottom: 80px;
+    }
+
+    &__content {
+      width: auto;
+      max-width: 918px;
+    }
+  }
+
+  .service__item {
+    width: 444px;
+
+    &-header {
+      width: 100%;
+      height: 234px;
+    }
+
+    &-header--stuff {
+      background-size: auto 234px;
+    }
+
+    &-header--map {
+      background-size: auto 234px;
+    }
+
+    &-content {
+      padding: 50px 49px;
+    }
+  }
+}

@@ -38,3 +38,18 @@
     width: 330px;
   }
 }
+
+@include desktop-medium {
+  .warranty-registration {
+    padding-top: 145px;
+
+    &__content {
+      width: auto;
+      max-width: 918px;
+      padding: 47px 395px 47px 80px;
+
+      background-position: top 75px right 79px;
+      background-size: 207px auto;
+    }
+  }
+}

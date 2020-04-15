@@ -1,11 +1,45 @@
 .service-form {
   @include container;
 
+  margin-bottom: 120px;
+
+  background-image: url("../img/48hours.png");
+  background-repeat: no-repeat;
+  background-position: top right 53px;
+  background-size: auto 100%;
+
+  @include retina {
+    background-image: url("../img/48hours@2x.png");
+  }
+
   &__content {
     width: 810px;
     padding: 60px;
 
     background-color: #f6f6f6;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  &__submit {
+    width: 330px;
+    margin: 0 auto;
   }
 }
 
@@ -13,6 +47,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.service-form label:not([for="agreement"]) {
+  margin-bottom: 25px;
 }
 
 .service-form__label {
@@ -46,8 +84,28 @@
     outline: none;
   }
 
-  &.js--wrong-input {
+  &.js--error {
     border-color: #ff0000;
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
   }
 }
 
@@ -56,9 +114,15 @@
   height: 48px;
 }
 
+.service-form__input.service-form__input--city {
+  width: 335px !important;
+  height: 48px;
+}
+
 .service-form__text {
   width: 690px;
   height: 96px;
+  padding: 15px;
 
   resize: none;
 }
@@ -111,7 +175,7 @@
     border-color: #00adef;
   }
 
-  &.js--wrong-input::before {
+  &.js--error::before {
     border-color: #ff0000;
   }
 }
@@ -129,5 +193,39 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@include desktop-medium {
+  .service-form {
+    margin-bottom: 80px;
+    max-width: 1024px;
+    padding-left: 53px;
+    padding-right: 53px;
+
+    background-image: url("../img/48hours@2x.png");
+    background-position: top right -40px;
+    background-clip: content-box;
+
+    &__content {
+      width: 602px;
+      padding: 60px 50px;
+    }
+
+    &__desc {
+      line-height: 20px;
+    }
+  }
+
+  .service-form__input {
+    width: 240px;
+  }
+
+  .service-form__input.service-form__input--city {
+    width: 240px !important;
+  }
+
+  .service-form__text {
+    width: 500px;
   }
 }

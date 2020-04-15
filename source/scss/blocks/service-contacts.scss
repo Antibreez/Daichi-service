@@ -47,3 +47,19 @@
     color: rgba(136, 136, 136, 0.8);
   }
 }
+
+@include desktop-medium {
+  .service-contacts {
+    padding-top: 120px;
+
+    &__mail {
+      margin-bottom: 50px;
+    }
+
+    &__mail-title,
+    &__phone-title {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}
