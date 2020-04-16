@@ -3,13 +3,13 @@
 
   margin-bottom: 120px;
 
-  background-image: url("../img/48hours.png");
+  background-image: url("../img/48hours-vertical.png");
   background-repeat: no-repeat;
   background-position: top right 53px;
   background-size: auto 100%;
 
   @include retina {
-    background-image: url("../img/48hours@2x.png");
+    background-image: url("../img/48hours-vertical@2x.png");
   }
 
   &__content {
@@ -203,7 +203,7 @@
     padding-left: 53px;
     padding-right: 53px;
 
-    background-image: url("../img/48hours@2x.png");
+    background-image: url("../img/48hours-vertical@2x.png");
     background-position: top right -40px;
     background-clip: content-box;
 
@@ -227,5 +227,120 @@
 
   .service-form__text {
     width: 500px;
+  }
+}
+
+@include tablet {
+  .service-form {
+    margin-bottom: 80px;
+    max-width: 704px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 300px;
+
+    background-image: url("../img/48hours.png");
+    background-position: top right;
+    background-size: 704px auto;
+    background-clip: padding-box;
+
+    @include retina {
+      background-image: url("../img/48hours@2x.png");
+    }
+
+    &__content {
+      width: 100%;
+      padding: 60px 102px;
+    }
+
+    &__title,
+    &__desc {
+      text-align: center;
+    }
+  }
+}
+
+@include mobile-l {
+  .service-form {
+    margin-bottom: 0;
+    max-width: 100%;
+    padding-top: 41.7%;
+
+    background-size: 100% auto;
+
+    &__content {
+      padding: 50px 0;
+    }
+
+    &__desc {
+      width: 416px;
+      margin: 0 auto 50px;
+    }
+  }
+
+  .service-form__input {
+    width: 416px;
+  }
+
+  .service-form__input.service-form__input--city {
+    width: 416px !important;
+  }
+
+  .service-form__text {
+    width: 416px;
+  }
+
+  .service-form label:not([for="agreement"]) {
+    margin: 0 auto 25px;
+  }
+
+  .service-form__agreement-wrapper {
+    max-width: 416px;
+    margin: 0 auto 50px;
+  }
+
+  .service-form__agreement-wrapper label::before {
+    top: 15px;
+  }
+}
+
+@include mobile {
+  .service-form {
+    padding-top: 62.5%;
+
+    background-size: 113% auto;
+
+    &__content {
+      padding: 50px 5%;
+    }
+
+    &__title {
+      padding: 0 20px;
+    }
+
+    &__desc {
+      width: auto;
+      padding: 0 20px;
+      margin: 0 auto 50px;
+    }
+
+    &__submit {
+      width: 260px;
+    }
+  }
+
+  .service-form__input {
+    width: 288px;
+  }
+
+  .service-form__input.service-form__input--city {
+    width: 288px !important;
+  }
+
+  .service-form__text {
+    width: 288px;
+  }
+
+  .service-form__agreement-wrapper {
+    max-width: 288px;
   }
 }

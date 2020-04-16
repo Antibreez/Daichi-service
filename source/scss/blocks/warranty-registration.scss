@@ -53,3 +53,75 @@
     }
   }
 }
+
+@include tablet {
+  .warranty-registration {
+    padding-top: 80px;
+
+    &__content {
+      max-width: 704px;
+      padding: 51px 308px 51px 60px;
+
+      background-position: top 136px right 60px;
+      background-size: 184px auto;
+    }
+
+    &__title {
+      width: 330px;
+    }
+
+    &__desc {
+      line-height: 22px;
+    }
+  }
+}
+
+@include mobile-l {
+  .warranty-registration {
+    padding-top: 60px;
+
+    &__content {
+      max-width: 416px;
+      padding: 230px 40px 50px;
+
+      background-position: top 50px center;
+      background-size: 108px auto;
+    }
+
+    &__title {
+      width: auto;
+
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    &__desc {
+      text-align: center;
+    }
+  }
+}
+
+@include mobile {
+  .warranty-registration {
+    &__content {
+      max-width: 288px;
+      padding: 209px 14px 50px;
+
+      background-size: 90px auto;
+    }
+
+    &__title {
+      letter-spacing: 0;
+    }
+
+    &__desc {
+      text-align: center;
+    }
+
+    &__link {
+      width: 260px;
+      padding: 15px 20px;
+    }
+  }
+}
