@@ -1,0 +1,186 @@
+.engineering-center-services {
+  @include container;
+
+  padding-top: 120px;
+
+  &__title {
+    @include title-font;
+
+    margin-bottom: 80px;
+
+    text-align: center;
+  }
+
+  &__list {
+    @include list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__price {
+    width: 100%;
+    min-height: 577px;
+    padding-top: 214px;
+
+    background-image: url("../img/car.png");
+    background-repeat: no-repeat;
+    background-size: 690px auto;
+    background-position: right center;
+
+    @include retina {
+      background-image: url("../img/car@2x.png");
+    }
+  }
+
+  &__price-title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.32px;
+  }
+
+  &__file-box {
+    display: flex;
+    align-items: center;
+    width: 570px;
+  }
+
+  &__file-data {
+    width: 480px;
+    padding-left: 80px;
+    margin-right: auto;
+
+    background-image: url("../img/icon_doc-pdf_blue.svg");
+    background-repeat: no-repeat;
+    background-position: top 3px left;
+  }
+
+  &__file-name {
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  &__file-size {
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.53px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__file-download {
+    display: block;
+    width: 21px;
+    height: 18px;
+    margin-right: 10px;
+
+    background-image: url("../img/icon_doc-load_blue.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__file-preview {
+    display: block;
+    width: 24px;
+    height: 14px;
+
+    background-image: url("../img/icon_doc-view_blue.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.engineering-center-services__item {
+  width: 690px;
+
+  &:first-child {
+    margin-bottom: 25px;
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.32px;
+  }
+
+  &-desc {
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1515px) {
+  .engineering-center-services {
+    &__title {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &__list {
+      max-width: 918px;
+      margin: 0 auto;
+    }
+  }
+
+  .engineering-center-services__item {
+    width: 444px;
+
+    &-title {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0;
+    }
+
+    &-desc {
+      margin: 0;
+
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .engineering-center-services {
+    &__price {
+      max-width: 918px;
+      min-height: 371px;
+      padding-top: 127px;
+      margin: 0 auto;
+
+      background-size: 444px auto;
+    }
+
+    &__price-title {
+      margin-bottom: 25px;
+
+      font-size: 24px;
+      line-height: 27px;
+      letter-spacing: 0;
+    }
+
+    &__file-box {
+      width: 444px;
+    }
+
+    &__file-data {
+      width: 365px;
+    }
+  }
+}

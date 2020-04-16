@@ -17,6 +17,10 @@
   var agreement = document.querySelector('.service-form__text-wrapper');
   var submitButton = document.querySelector('.service-form__submit');
 
+  if (!form) {
+    return;
+  }
+
   var imPhone = new Inputmask('+7(999)999-99-99');
   imPhone.mask(phoneInput);
 

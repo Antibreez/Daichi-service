@@ -1,0 +1,41 @@
+.rent {
+  @include container;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__title {
+    @include title-font;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+
+  &__desc {
+    @include desc-font;
+
+    max-width: 1170px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 1515px) {
+  .rent {
+    &__title {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &__desc {
+      @include desc-font;
+
+      max-width: 1170px;
+      margin: 0 auto;
+
+      text-align: center;
+    }
+  }
+}
