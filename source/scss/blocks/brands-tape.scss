@@ -1,0 +1,99 @@
+.brands-tape {
+  margin-bottom: 150px;
+
+  &__title {
+    margin: 0 auto 153px;
+
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+  }
+}
+
+.brands-tape__slide {
+  @include transition;
+
+  width: 158px;
+  height: 64px;
+
+  background-repeat: no-repeat;
+  background-size: 158px auto;
+  background-position: center;
+
+  &--daikin {
+    background-image: url("../img/icon_daikin-grey.svg");
+  }
+
+  &--daikin:hover {
+    background-image: url("../img/icon_daikin-color.svg");
+  }
+
+  &--midea {
+    background-image: url("../img/icon_midea-grey.svg");
+  }
+
+  &--midea:hover {
+    background-image: url("../img/icon_midea-color.svg");
+  }
+
+  &--aurum {
+    background-image: url("../img/icon_aurum-grey.svg");
+  }
+
+  &--aurum:hover {
+    background-image: url("../img/icon_aurum-color.svg");
+  }
+
+  &--daichi {
+    background-image: url("../img/icon_daichi-grey.svg");
+  }
+
+  &--daichi:hover {
+    background-image: url("../img/icon_daichi-color.svg");
+  }
+
+  &--axioma {
+    background-image: url("../img/icon_axioma-grey.svg");
+  }
+
+  &--axioma:hover {
+    background-image: url("../img/icon_axioma-color.svg");
+  }
+
+  &--wolter {
+    background-image: url("../img/icon_wolter-grey.svg");
+  }
+
+  &--wolter:hover {
+    background-image: url("../img/icon_wolter-color.svg");
+  }
+
+  &--kentatsu {
+    background-image: url("../img/icon_kentatsu-grey.svg");
+  }
+
+  &--kentatsu:hover {
+    background-image: url("../img/icon_kentatsu-color.svg");
+  }
+
+  &--primera {
+    background-image: url("../img/icon_primera-grey.svg");
+  }
+
+  &--primera:hover {
+    background-image: url("../img/icon_primera-color.svg");
+  }
+
+  &--stormann {
+    background-image: url("../img/icon_stormann-grey.svg");
+  }
+
+  &--stormann:hover {
+    background-image: url("../img/icon_stormann-color.svg");
+  }
+}
+
+.brands-tape__container > .swiper-wrapper{
+  transition-timing-function : linear;
+}

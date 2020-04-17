@@ -1,14 +1,26 @@
 (function () {
-  var container = document.querySelector('.equipment__container');
+  var slider = new Swiper('.brands-tape__container', {
+    slidesPerView: '7',
+    loop: true,
+    speed: 2000,
+    freeMode: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false
+    },
+  });
+})();
 
-  var slider = initPreviewSwiper('.equipment__slider-container');
-
-  if (!slider) {
-    return;
+(function () {
+  function initFreeSwiper() {
+    return new Swiper('.equipment__slider-container', {
+      freeMode: true,
+      slidesPerView: 2.3
+    });
   }
 
-  function initPreviewSwiper(name) {
-    return new Swiper(name, {
+  function initSingleSwiper() {
+    return new Swiper('.equipment__slider-container', {
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -16,52 +28,35 @@
     });
   }
 
-  function onTouchStart(e) {
-    let x = 0;
+  var isTablet = function () {
+    return window.matchMedia("(min-width: 768px)").matches;
+  };
 
-    function onTouchMove(e) {
-      let touchobj = e.changedTouches[0];
+  var isOutOfTablet = !isTablet();
 
-      if (x !== 0) {
-        container.scrollLeft += x - touchobj.clientX;
-      }
+  var slider = isTablet()
+    ? initFreeSwiper()
+    : initSingleSwiper();
 
-      x = touchobj.clientX;
-    }
-
-    function onTouchEnd(e) {
-      document.removeEventListener(`touchmove`, onTouchMove);
-      document.removeEventListener(`touchend`, onTouchEnd)
-    }
-
-    document.addEventListener(`touchmove`, onTouchMove);
-    document.addEventListener(`touchend`, onTouchEnd);
+  if (!slider) {
+    return;
   }
 
-  function onMouseDown(e) {
-    let x = 0;
-
-    function onMouseMove(e) {
-      e.preventDefault();
-
-      if (x !== 0) {
-        container.scrollLeft += x - e.clientX;
-      }
-
-      x = e.clientX;
+  var onResize = function () {
+    if (isOutOfTablet && isTablet()) {
+      slider.destroy(true, true);
+      slider = initFreeSwiper();
+      isOutOfTablet = false;
     }
 
-    function onMouseUp(e) {
-      document.removeEventListener(`mousemove`, onMouseMove);
-      document.removeEventListener(`mouseup`, onMouseUp);
+    if (!isOutOfTablet && !isTablet()) {
+      slider.destroy(true, true);
+      slider = initSingleSwiper();
+      isOutOfTablet = true;
     }
-
-    document.addEventListener(`mousemove`, onMouseMove);
-    document.addEventListener(`mouseup`, onMouseUp);
   }
 
-  container.addEventListener('touchstart', onTouchStart);
-  container.addEventListener('mousedown', onMouseDown);
+  window.addEventListener('resize', onResize);
 })();
 
 (function () {

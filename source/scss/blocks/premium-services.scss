@@ -1,0 +1,74 @@
+.premium-services {
+  @include container;
+
+  padding-bottom: 185px;
+  padding-top: 57px;
+
+  &__title {
+    @include title-font;
+
+    width: 1170px;
+    margin: 0 auto 80px;
+
+    text-align: center;
+  }
+}
+
+.premium-services__item {
+  &-content {
+    width: 810px;
+    padding: 80px 120px;
+
+    background-color: #f6f6f6;
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  &-desc {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.63px;
+  }
+
+  &-link {
+    width: 215px;
+    padding: 15px 20px;
+  }
+
+  &--climat-online {
+    margin-bottom: 80px;
+
+    background-image: url("../img/daichi-climat-online.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 600px auto;
+
+    @include retina {
+      background-image: url("../img/daichi-climat-online@2x.png");
+    }
+  }
+
+  &--my-comfort {
+    padding-left: 600px;
+
+    background-image: url("../img/daichi-comfort.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 600px auto;
+
+    @include retina {
+      background-image: url("../img/daichi-comfort@2x.png");
+    }
+  }
+}

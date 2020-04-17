@@ -244,7 +244,7 @@
 
 @include tablet {
   .equipment {
-    padding: 0;
+    padding: 0 32px;
 
     max-width: 768px;
     margin-bottom: 130px;
@@ -256,7 +256,7 @@
 
   .equipment__desc {
     margin: 0 auto 50px;
-    padding: 0 32px;
+    padding: 0;
   }
 
   .equipment__item-link {
@@ -264,12 +264,15 @@
   }
 
   .equipment__container {
-    overflow: hidden;
+    display: none;
   }
 
-  .equipment__wrapper {
-    width: 982px;
-    padding: 0 32px;
+  .equipment__slider-container {
+    display: block;
+  }
+
+  .equipment__slide:nth-of-type(2) .equipment__app-desc {
+    margin-bottom: 50px;
   }
 
   // .equipment__item {
@@ -320,12 +323,7 @@
     margin-bottom: 50px;
   }
 
-  .equipment__wrapper {
-    display: none;
-  }
-
   .equipment__slider-container {
-    display: block;
     padding-bottom: 40px;
   }
 

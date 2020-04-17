@@ -5137,7 +5137,7 @@ input:invalid {
 
 @media (max-width: 1023px) {
   .equipment {
-    padding: 0;
+    padding: 0 32px;
     max-width: 768px;
     margin-bottom: 130px;
   }
@@ -5146,18 +5146,20 @@ input:invalid {
   }
   .equipment__desc {
     margin: 0 auto 50px;
-    padding: 0 32px;
+    padding: 0;
   }
   .equipment__item-link {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
   .equipment__container {
-    overflow: hidden;
+    display: none;
   }
-  .equipment__wrapper {
-    width: 982px;
-    padding: 0 32px;
+  .equipment__slider-container {
+    display: block;
+  }
+  .equipment__slide:nth-of-type(2) .equipment__app-desc {
+    margin-bottom: 50px;
   }
 }
 
@@ -5175,11 +5177,7 @@ input:invalid {
     width: auto;
     margin-bottom: 50px;
   }
-  .equipment__wrapper {
-    display: none;
-  }
   .equipment__slider-container {
-    display: block;
     padding-bottom: 40px;
   }
   .equipment__item {
@@ -5238,4 +5236,450 @@ input:invalid {
   .equipment__remark {
     width: 288px;
   }
+}
+
+.monitoring-center {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 1399px) {
+  .monitoring-center {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .monitoring-center {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .monitoring-center {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .monitoring-center {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.monitoring-center__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+@media (max-width: 1399px) {
+  .monitoring-center__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .monitoring-center__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.monitoring-center__desc {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1399px) {
+  .monitoring-center__desc {
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 1515px) {
+  .monitoring-center__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .monitoring-center__desc {
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.63px;
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1515px) and (max-width: 1399px) {
+  .monitoring-center__desc {
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0;
+  }
+}
+
+.premium-services {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  padding-bottom: 185px;
+  padding-top: 57px;
+}
+
+@media (max-width: 1399px) {
+  .premium-services {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .premium-services {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .premium-services {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .premium-services {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.premium-services__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  width: 1170px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+@media (max-width: 1399px) {
+  .premium-services__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .premium-services__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.premium-services__item-content {
+  width: 810px;
+  padding: 80px 120px;
+  background-color: #f6f6f6;
+}
+
+.premium-services__item-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 46px;
+}
+
+.premium-services__item-desc {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+}
+
+.premium-services__item-link {
+  width: 215px;
+  padding: 15px 20px;
+}
+
+.premium-services__item--climat-online {
+  margin-bottom: 80px;
+  background-image: url("../img/daichi-climat-online.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 600px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .premium-services__item--climat-online {
+    background-image: url("../img/daichi-climat-online@2x.png");
+  }
+}
+
+.premium-services__item--my-comfort {
+  padding-left: 600px;
+  background-image: url("../img/daichi-comfort.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 600px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .premium-services__item--my-comfort {
+    background-image: url("../img/daichi-comfort@2x.png");
+  }
+}
+
+.capabilities {
+  max-width: 1410px;
+  margin: 0 auto 184px;
+  padding: 77px 120px 70px 720px;
+  background-image: url("../img/capabilities.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 630px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .capabilities {
+    background-image: url("../img/capabilities@2x.png");
+  }
+}
+
+.capabilities__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.32px;
+}
+
+.capabilities__desc {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.63px;
+}
+
+.contact-center {
+  max-width: 1920px;
+  margin: 0 auto 160px;
+  padding-top: 104px;
+  padding-bottom: 103px;
+  background-image: url("../img/48hours-big.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 945px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .contact-center {
+    background-image: url("../img/48hours-big.png");
+  }
+}
+
+.contact-center__content {
+  width: 810px;
+  padding: 80px 120px;
+  margin: 0 855px 0 auto;
+  background-color: #f6f6f6;
+}
+
+.contact-center__title {
+  margin: 0;
+  margin-bottom: 44px;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 46px;
+}
+
+.contact-center__desc {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.63px;
+}
+
+.contact-center__desc span {
+  font-weight: 400;
+}
+
+.contact-center__phone-link {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0.32px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-center__phone-link:hover {
+  color: #00adef;
+}
+
+.equipment-range {
+  max-width: 1410px;
+  padding: 112px 120px 70px 720px;
+  margin: 0 auto 140px;
+  background-image: url("../img/equipment-range.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 600px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .equipment-range {
+    background-image: url("../img/equipment-range@2x.png");
+  }
+}
+
+.equipment-range__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.32px;
+}
+
+.equipment-range__desc {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.63px;
+}
+
+.brands-tape {
+  margin-bottom: 150px;
+}
+
+.brands-tape__title {
+  margin: 0 auto 153px;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  text-align: center;
+}
+
+.brands-tape__slide {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 158px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: 158px auto;
+  background-position: center;
+}
+
+.brands-tape__slide--daikin {
+  background-image: url("../img/icon_daikin-grey.svg");
+}
+
+.brands-tape__slide--daikin:hover {
+  background-image: url("../img/icon_daikin-color.svg");
+}
+
+.brands-tape__slide--midea {
+  background-image: url("../img/icon_midea-grey.svg");
+}
+
+.brands-tape__slide--midea:hover {
+  background-image: url("../img/icon_midea-color.svg");
+}
+
+.brands-tape__slide--aurum {
+  background-image: url("../img/icon_aurum-grey.svg");
+}
+
+.brands-tape__slide--aurum:hover {
+  background-image: url("../img/icon_aurum-color.svg");
+}
+
+.brands-tape__slide--daichi {
+  background-image: url("../img/icon_daichi-grey.svg");
+}
+
+.brands-tape__slide--daichi:hover {
+  background-image: url("../img/icon_daichi-color.svg");
+}
+
+.brands-tape__slide--axioma {
+  background-image: url("../img/icon_axioma-grey.svg");
+}
+
+.brands-tape__slide--axioma:hover {
+  background-image: url("../img/icon_axioma-color.svg");
+}
+
+.brands-tape__slide--wolter {
+  background-image: url("../img/icon_wolter-grey.svg");
+}
+
+.brands-tape__slide--wolter:hover {
+  background-image: url("../img/icon_wolter-color.svg");
+}
+
+.brands-tape__slide--kentatsu {
+  background-image: url("../img/icon_kentatsu-grey.svg");
+}
+
+.brands-tape__slide--kentatsu:hover {
+  background-image: url("../img/icon_kentatsu-color.svg");
+}
+
+.brands-tape__slide--primera {
+  background-image: url("../img/icon_primera-grey.svg");
+}
+
+.brands-tape__slide--primera:hover {
+  background-image: url("../img/icon_primera-color.svg");
+}
+
+.brands-tape__slide--stormann {
+  background-image: url("../img/icon_stormann-grey.svg");
+}
+
+.brands-tape__slide--stormann:hover {
+  background-image: url("../img/icon_stormann-color.svg");
+}
+
+.brands-tape__container > .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }

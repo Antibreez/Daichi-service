@@ -1,0 +1,33 @@
+.capabilities {
+  max-width: 1410px;
+  margin: 0 auto 184px;
+  padding: 77px 120px 70px 720px;
+
+  background-image: url("../img/capabilities.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 630px auto;
+
+  @include retina {
+    background-image: url("../img/capabilities@2x.png");
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.32px;
+  }
+
+  &__desc {
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.63px;
+  }
+}

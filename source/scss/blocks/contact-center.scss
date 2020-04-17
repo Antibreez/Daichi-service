@@ -1,0 +1,61 @@
+.contact-center {
+  max-width: 1920px;
+  margin: 0 auto 160px;
+  padding-top: 104px;
+  padding-bottom: 103px;
+
+  background-image: url("../img/48hours-big.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 945px auto;
+
+  @include retina {
+    background-image: url("../img/48hours-big.png");
+  }
+
+  &__content {
+    width: 810px;
+    padding: 80px 120px;
+    margin: 0 855px 0 auto;
+
+    background-color: #f6f6f6;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 44px;
+
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.63px;
+  }
+
+  &__desc span {
+    font-weight: 400;
+  }
+
+  &__phone-link {
+    @include transition;
+
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.32px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &__phone-link:hover {
+    color: #00adef;
+  }
+}
