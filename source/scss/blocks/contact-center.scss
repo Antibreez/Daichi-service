@@ -10,7 +10,7 @@
   background-size: 945px auto;
 
   @include retina {
-    background-image: url("../img/48hours-big.png");
+    background-image: url("../img/48hours-big@2x.png");
   }
 
   &__content {
@@ -57,5 +57,139 @@
 
   &__phone-link:hover {
     color: #00adef;
+  }
+}
+
+@media (max-width: 1515px) {
+  .contact-center {
+    max-width: 1024px;
+    margin: 0 auto 80px;
+    padding-top: 60px;
+    padding-bottom: 0;
+
+    background-image: url("../img/48hours-tablet.png");
+    background-size: 497px auto;
+
+    @include retina {
+      background-image: url("../img/48hours-tablet@2x.png");
+    }
+
+    &__content {
+      width: 523px;
+      padding: 80px;
+      margin: 0 448px 0 auto;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &__desc {
+      font-size: 15px;
+      line-height: 23px;
+      letter-spacing: 0;
+    }
+
+    &__desc span {
+      font-weight: 400;
+    }
+  }
+}
+
+@include tablet {
+  .contact-center {
+    max-width: 704px;
+    margin: 0 auto 80px;
+    padding-top: 325px;
+
+    background-image: url("../img/48hours-tablet-2.png");
+    background-size: 704px auto;
+
+    @include retina {
+      background-image: url("../img/48hours-tablet-2@2x.png");
+    }
+
+    &__content {
+      width: 704px;
+      padding: 80px 92px;
+      margin: 0;
+
+      text-align: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__desc {
+      margin-bottom: 25px;
+
+      text-align: center;
+    }
+  }
+}
+
+@include mobile-l {
+  .contact-center {
+    padding-top: 67.7%;
+
+    background-image: url("../img/48hours.png");
+    background-size: 110% auto;
+
+    @include retina {
+      background-image: url("../img/48hours@2x.png");
+    }
+
+    &__content {
+      width: auto;
+      padding: 50px 32px;
+      margin: 0;
+
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__phone-link {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
+@include mobile {
+  .contact-center {
+    padding-top: 101%;
+
+    background-image: url("../img/48hours-big.png");
+    background-size: 118% auto;
+
+    @include retina {
+      background-image: url("../img/48hours-big@2x.png");
+    }
+
+    &__content {
+      width: auto;
+      padding: 50px 16px;
+      margin: 0;
+
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__phone-link {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 }

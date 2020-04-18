@@ -9,6 +9,7 @@
     margin-bottom: 80px;
 
     text-align: center;
+    color: rgba(0, 0, 0, 0.8);
   }
 
   &__list {
@@ -181,6 +182,159 @@
 
     &__file-data {
       width: 365px;
+    }
+  }
+}
+
+@include tablet {
+  .engineering-center-services {
+    &__list {
+      max-width: 704px;
+    }
+  }
+
+  .engineering-center-services__item {
+    width: 336px;
+
+    &-desc {
+      line-height: 23px;
+    }
+  }
+
+  .engineering-center-services {
+    &__price {
+      max-width: 704px;
+      min-height: 311px;
+      padding-top: 80px;
+
+      background-size: 368px auto;
+      background-position: right -10px center;
+    }
+
+    &__price-title {
+      width: 336px;
+    }
+
+    &__file-box {
+      width: 336px;
+    }
+
+    &__file-data {
+      width: 244px;
+
+      background-position: top 13px left;
+    }
+  }
+}
+
+@include mobile-l {
+  .engineering-center-services {
+    padding-top: 100px;
+
+    &__title {
+      margin-bottom: 50px;
+
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .engineering-center-services__item {
+    width: 100%;
+
+    &-title {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.63px;
+      text-align: center;
+    }
+
+    &-desc {
+      line-height: 22px;
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .engineering-center-services {
+    &__price {
+      min-height: auto;
+      padding-top: 346px;
+
+      background-image: url("../img/car-mobile-l.png");
+      background-size: 416px auto;
+      background-position: top 35px center;
+
+      @include retina {
+        background-image: url("../img/car-mobile-l@2x.png");
+      }
+    }
+
+    &__file-box {
+      width: 416px;
+      height: 65px;
+      margin: 0 auto;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+
+    &__price-title {
+      display: none;
+    }
+
+    &__file-data {
+      width: 244px;
+
+      background-position: top 5px left;
+    }
+
+    &__file-name {
+      width: 285px;
+    }
+
+    &__file-download {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include mobile {
+  .engineering-center-services {
+    padding-top: 50px;
+  }
+
+  .engineering-center-services {
+    &__price {
+      padding-top: 265px;
+
+      background-size: 320px auto;
+      background-position: top 25px center;
+    }
+
+    &__file-box {
+      width: 288px;
+      height: 85px;
+    }
+
+    &__file-data {
+      width: auto;
+
+      background-position: top 5px left;
+    }
+
+    &__file-name {
+      width: 163px;
+    }
+
+    &__file-download {
+      margin-right: 0;
+      margin-bottom: 20px;
+      margin-top: 15px;
     }
   }
 }

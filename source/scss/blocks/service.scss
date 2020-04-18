@@ -28,13 +28,13 @@
   }
 
   &-header--stuff {
-    background-image: url("../img/stuff.png");
+    background-image: url("../img/stuff-1.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto 300px;
 
     @include retina {
-      background-image: url("../img/stuff@2x.png");
+      background-image: url("../img/stuff-1@2x.png");
     }
   }
 

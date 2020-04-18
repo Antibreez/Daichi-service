@@ -1,0 +1,183 @@
+.engineering-center-contacts {
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  &__container {
+    @include container;
+
+    text-align: center;
+  }
+
+  &__title {
+    @include title-font;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.63px;
+  }
+
+  &__mail,
+  &__phone,
+  &__site {
+    @include title-font;
+    @include transition;
+
+    display: inline-block;
+
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &__phone:hover,
+  &__mail:hover,
+  &__site:hover {
+    color: #00adef;
+  }
+
+  &__mail,
+  &__site {
+    margin-bottom: 60px;
+  }
+
+  &__phone {
+    margin-bottom: 50px;
+  }
+
+  &__mail-title,
+  &__phone-title,
+  &__site-title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    line-height: 27px;
+    color: rgba(136, 136, 136, 0.8);
+  }
+
+  &__schedule {
+    width: 570px;
+    margin: 0 auto;
+
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: 0.67px;
+  }
+
+  &__schedule span {
+    font-weight: 400;
+  }
+}
+
+@media(max-width: 1515px) {
+  .engineering-center-contacts {
+    padding-top: 0;
+
+    &__title {
+      font-size: 32px;
+      line-height: 35px;
+      letter-spacing: 0.32px;
+    }
+
+    &__mail,
+    &__phone,
+    &__site {
+      font-size: 32px;
+      line-height: 35px;
+      letter-spacing: 0.32px;
+    }
+
+    &__mail,
+    &__site {
+      margin-bottom: 50px;
+    }
+
+    &__mail-title,
+    &__phone-title,
+    &__site-title {
+      margin-bottom: 15px;
+
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__schedule {
+      width: 550px;
+
+      font-size: 18px;
+      letter-spacing: 0.63px;
+    }
+  }
+}
+
+@include tablet {
+  .engineering-center-contacts {
+    padding-top: 0;
+  }
+}
+
+@include mobile-l {
+  .engineering-center-contacts {
+    padding: 50px 0 100px;
+
+    &__title,
+    &__mail,
+    &__phone {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &__schedule {
+      width: auto;
+    }
+  }
+}
+
+@include mobile {
+  .engineering-center-contacts {
+
+    &__title,
+    &__mail,
+    &__phone,
+    &__site {
+      font-size: 24px;
+      line-height: 27px;
+
+      letter-spacing: 0;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__mail,
+    &__site {
+      margin-bottom: 35px;
+    }
+
+    &__mail-title,
+    &__phone-title,
+    &__site-title {
+      margin-bottom: 15px;
+
+      letter-spacing: 0.63px;
+    }
+
+    &__schedule {
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0;
+    }
+  }
+}

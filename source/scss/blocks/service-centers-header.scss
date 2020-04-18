@@ -1,0 +1,98 @@
+.service-centers-header {
+  @include container;
+
+  padding-top: 114px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin:0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+  }
+
+  &__desc {
+    @include desc-font;
+
+    max-width: 810px;
+    margin: 0 auto;
+
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 102px;
+  }
+}
+
+@include desktop-medium {
+  .service-centers-header {
+    padding-bottom: 50px;
+
+    &__title {
+      margin-bottom: 25px;
+
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &__desc {
+      line-height: 22px;
+      letter-spacing: 0;
+    }
+
+    &__breadcrumbs {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@include tablet {
+  .service-centers-header {
+    padding-top: 35px;
+    padding-bottom: 50px;
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+}
+
+@include mobile-l {
+  .service-centers-header {
+    &__title {
+      padding: 0 60px;
+
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
+@include mobile {
+  .service-centers-header {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__title {
+      padding: 0 16px;
+    }
+
+    &__desc {
+      padding: 0 16px;
+    }
+
+    &__breadcrumbs {
+      margin-bottom: 35px;
+    }
+  }
+}

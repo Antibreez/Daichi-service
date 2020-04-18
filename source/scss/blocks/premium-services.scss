@@ -11,6 +11,7 @@
     margin: 0 auto 80px;
 
     text-align: center;
+    color: rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -49,26 +50,198 @@
   &--climat-online {
     margin-bottom: 80px;
 
-    background-image: url("../img/daichi-climat-online.png");
+    background-image: url("../img/daichi-climat-online-2.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 600px auto;
 
     @include retina {
-      background-image: url("../img/daichi-climat-online@2x.png");
+      background-image: url("../img/daichi-climat-online-2@2x.png");
     }
   }
 
   &--my-comfort {
     padding-left: 600px;
 
-    background-image: url("../img/daichi-comfort.png");
+    background-image: url("../img/daichi-comfort-1.png");
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 600px auto;
 
     @include retina {
-      background-image: url("../img/daichi-comfort@2x.png");
+      background-image: url("../img/daichi-comfort-1@2x.png");
+    }
+  }
+}
+
+@media (max-width: 1515px) {
+  .premium-services {
+    max-width: 1024px;
+    padding-bottom: 160px;
+    padding-left: 53px;
+    padding-right: 53px;
+
+    &__title {
+      width: 760px;
+
+      font-size: 32px;
+      line-height: 35px;
+    }
+  }
+
+  .premium-services__item {
+    &-content {
+      width: 523px;
+      padding: 80px;
+    }
+
+    &-title {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &-desc {
+      font-size: 15px;
+      line-height: 21px;
+      letter-spacing: 0;
+    }
+
+    &--climat-online {
+      background-size: auto 100%;
+    }
+
+    &--my-comfort {
+      padding-left: 395px;
+
+      background-size: 395px auto;
+      background-image: url("../img/daichi-comfort-tablet-1.png");
+
+      @include retina {
+        background-image: url("../img/daichi-comfort-tablet-1@2x.png");
+      }
+    }
+  }
+}
+
+@include tablet {
+  .premium-services {
+    max-width: 768px;
+    padding-bottom: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &__title {
+      width: auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  .premium-services__item {
+    &-content {
+      width: 456px;
+      padding: 70px 60px;
+    }
+
+    &--climat-online {
+      margin-bottom: 50px;
+
+      background-size: auto 100%;
+      background-position: top right -60px;
+    }
+
+    &--my-comfort {
+      padding-left: 248px;
+
+      background-size: auto 100%;
+      background-position: top left -70px;
+    }
+  }
+}
+
+@include mobile-l {
+  .premium-services {
+    max-width: 480px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .premium-services__item {
+    padding-top: 180px;
+
+    &-content {
+      width: 100%;
+      padding: 50px 15px;
+    }
+
+    &-title {
+      padding: 0 60px;
+
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    &-desc {
+      text-align: center;
+    }
+
+    &-link {
+      margin: 0 auto;
+    }
+
+    &--climat-online {
+      margin-bottom: 50px;
+
+      background-image: url("../img/daichi-climat-online.png");
+      background-size: 100% auto;
+      background-position: top center;
+
+      @include retina {
+        background-image: url("../img/daichi-climat-online@2x.png");
+      }
+    }
+
+    &--my-comfort {
+      padding-left: 0;
+
+      background-size: 100% auto;
+      background-position: top -200px center;
+    }
+  }
+}
+
+@include mobile {
+  .premium-services {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .premium-services__item {
+    max-width: 288px;
+    margin: 0 auto;
+
+    &-title {
+      padding: 0;
+    }
+
+    &--climat-online {
+      margin-bottom: 30px;
+
+      background-image: url("../img/daichi-climat-online-2.png");
+
+      @include retina {
+        background-image: url("../img/daichi-climat-online-2@2x.png");
+      }
+    }
+
+    &--my-comfort {
+      padding-left: 0;
+
+      background-size: 100% auto;
+      background-position: top -105px center;
     }
   }
 }

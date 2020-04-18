@@ -34,3 +34,43 @@
     outline: none;
   }
 }
+
+@include mobile {
+  .breadcrumbs {
+    padding: 17px 16px 16px;
+    margin-bottom: 25px;
+
+    background-color: #f6f6f6;
+  }
+
+  .breadcrumbs__link {
+    font-size: 13px;
+    line-height: 15px;
+
+    &:last-child {
+      display: none;
+    }
+
+    &:first-child {
+      position: relative;
+      padding-left: 25px;
+
+      color: #888888;
+    }
+
+    &:first-child::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 10px;
+      height: 15px;
+
+      background-image: url("../img/icon_arrow-left.svg");
+      background-repeat: no-repeat;
+      background-position: top 50% left 0;
+    }
+  }
+}

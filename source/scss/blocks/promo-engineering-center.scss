@@ -48,12 +48,12 @@
       padding-left: 53px;
       padding-right: 53px;
 
-      background-image: url("../img/stuff.png");
+      background-image: url("../img/stuff-1.png");
       background-size: 410px auto;
       background-position: bottom right 53px;
 
       @include retina {
-        background-image: url("../img/stuff@2x.png");
+        background-image: url("../img/stuff-1@2x.png");
       }
     }
 
@@ -74,6 +74,106 @@
       & br {
         display: block;
       }
+    }
+  }
+}
+
+@include tablet {
+  .promo-engineering-center {
+    &__container {
+      max-width: 768px;
+      min-height: 344px;
+      padding-top: 35px;
+      padding-bottom: 40px;
+      padding-left: 32px;
+      padding-right: 32px;
+
+      background-size: 336px auto;
+      background-position: bottom right 32px;
+    }
+
+    &__breadcrumbs {
+      margin-bottom: 45px;
+    }
+
+    &__title {
+      width: 336px;
+
+      font-size: 32px;
+      line-height: 37px;
+    }
+
+    &__desc {
+      width: 336px;
+
+      & br {
+        display: block;
+      }
+    }
+  }
+}
+
+@include mobile-l {
+  .promo-engineering-center {
+    &__container {
+      min-height: auto;
+      padding-bottom: 330px;
+
+      background-size: 416px auto;
+      background-position: bottom center;
+    }
+
+    &__breadcrumbs {
+      margin-bottom: 45px;
+    }
+
+    &__title {
+      width: auto;
+      margin: 0 auto 25px;
+
+      font-size: 24px;
+      line-height: 27px;
+      text-align: center;
+    }
+
+    &__desc {
+      width: auto;
+      margin: auto;
+      padding: 0 35px;
+
+      text-align: center;
+
+      & br {
+        display: block;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .promo-engineering-center {
+    &__container {
+      min-height: auto;
+      padding-bottom: 230px;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      background-size: 288px auto;
+    }
+
+    &__breadcrumbs {
+      margin-bottom: 35px;
+    }
+
+    &__title {
+      width: auto;
+      margin: 0 auto 25px;
+      padding: 0 16px;
+    }
+
+    &__desc {
+      padding: 0 16px;
     }
   }
 }

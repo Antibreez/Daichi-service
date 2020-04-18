@@ -1,3 +1,8 @@
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-2547px); }
+}
+
 .brands-tape {
   margin-bottom: 150px;
 
@@ -8,14 +13,29 @@
     font-size: 48px;
     line-height: 53px;
     text-align: center;
+    color: rgba(0, 0, 0, 0.8);
   }
+}
+
+.brands-tape__container {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.brands-tape__wrapper {
+  animation: scroll 15s linear infinite;
+  display: flex;
+  width: 5094px;
 }
 
 .brands-tape__slide {
   @include transition;
 
   width: 158px;
+  min-width: 158px;
   height: 64px;
+  margin-right: 125px;
 
   background-repeat: no-repeat;
   background-size: 158px auto;
@@ -94,6 +114,81 @@
   }
 }
 
-.brands-tape__container > .swiper-wrapper{
-  transition-timing-function : linear;
+@media (max-width: 1515px) {
+  .brands-tape {
+    &__title {
+      width: 650px;
+
+      font-size: 32px;
+      line-height: 35px;
+    }
+  }
+}
+
+@include tablet {
+  .brands-tape {
+    margin-bottom: 100px;
+
+    &__title {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@include mobile-l {
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-1899px); }
+  }
+
+  .brands-tape {
+    margin-bottom: 108px;
+
+    &__title {
+      width: auto;
+      margin-bottom: 56px;
+      padding: 0 32px;
+
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .brands-tape__wrapper {
+    animation: scroll 12s linear infinite;
+    width: 3798px;
+  }
+
+  .brands-tape__slide {
+    min-width: 125px;
+    width: 125px;
+    height: 50px;
+    margin-right: 86px;
+
+    background-size: 125px auto;
+  }
+}
+
+@include mobile {
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-1260px); }
+  }
+
+  .brands-tape {
+    margin-bottom: 50px;
+  }
+
+  .brands-tape__wrapper {
+    width: 2520px;
+  }
+
+  .brands-tape__slide {
+    min-width: 90px;
+    width: 90px;
+    height: 36px;
+    margin-right: 50px;
+
+    background-size: 90px auto;
+  }
 }

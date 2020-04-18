@@ -1,4 +1,8 @@
 (function () {
+  if (!document.querySelector('.equipment__slider-container')) {
+    return;
+  }
+
   function initFreeSwiper() {
     return new Swiper('.equipment__slider-container', {
       freeMode: true,
