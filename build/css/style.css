@@ -3404,6 +3404,14 @@ input:invalid {
           box-shadow: none;
 }
 
+ul li {
+  list-style: none;
+}
+
+a {
+  border-bottom: none;
+}
+
 .button {
   display: block;
   height: 48px;
