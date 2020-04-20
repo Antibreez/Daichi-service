@@ -10,6 +10,10 @@
   }
 }
 
+.select2-container.select2 {
+  width: 335px !important;
+}
+
 .select2-container .select2-selection--single {
   //width: 335px;
   height: 48px;
@@ -87,4 +91,22 @@
 
 .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b, .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   transform: rotate(0);
+}
+
+@include desktop-medium {
+  .select2-container.select2 {
+    width: 240px !important;
+  }
+}
+
+@include mobile-l {
+  .select2-container.select2 {
+    width: 416px !important;
+  }
+}
+
+@include mobile {
+  .select2-container.select2 {
+    width: 288px !important;
+  }
 }

@@ -196,6 +196,10 @@
   }
 }
 
+.service-form__agreement-link {
+  border: none;
+}
+
 @include desktop-medium {
   .service-form {
     margin-bottom: 80px;
