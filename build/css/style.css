@@ -4311,7 +4311,7 @@ input:invalid {
 }
 
 .service-form__input {
-  width: 335px;
+  width: 335px !important;
   height: 48px;
 }
 
@@ -4413,7 +4413,7 @@ input:invalid {
     line-height: 20px;
   }
   .service-form__input {
-    width: 240px;
+    width: 240px !important;
   }
   .service-form__input.service-form__input--city {
     width: 240px !important;
@@ -4468,7 +4468,7 @@ input:invalid {
     margin: 0 auto 50px;
   }
   .service-form__input {
-    width: 416px;
+    width: 416px !important;
   }
   .service-form__input.service-form__input--city {
     width: 416px !important;
@@ -4508,7 +4508,7 @@ input:invalid {
     width: 260px;
   }
   .service-form__input {
-    width: 288px;
+    width: 288px !important;
   }
   .service-form__input.service-form__input--city {
     width: 288px !important;

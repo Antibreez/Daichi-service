@@ -110,7 +110,7 @@
 }
 
 .service-form__input {
-  width: 335px;
+  width: 335px !important;
   height: 48px;
 }
 
@@ -222,7 +222,7 @@
   }
 
   .service-form__input {
-    width: 240px;
+    width: 240px !important;
   }
 
   .service-form__input.service-form__input--city {
@@ -282,7 +282,7 @@
   }
 
   .service-form__input {
-    width: 416px;
+    width: 416px !important;
   }
 
   .service-form__input.service-form__input--city {
@@ -333,7 +333,7 @@
   }
 
   .service-form__input {
-    width: 288px;
+    width: 288px !important;
   }
 
   .service-form__input.service-form__input--city {
