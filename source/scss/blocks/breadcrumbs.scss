@@ -2,7 +2,7 @@
   font-size: 0;
 }
 
-.breadcrumbs__link {
+a.breadcrumbs__link {
   @include link-reset;
 
   position: relative;

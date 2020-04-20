@@ -3468,7 +3468,7 @@ input:invalid {
   font-size: 0;
 }
 
-.breadcrumbs__link {
+a.breadcrumbs__link {
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -3477,22 +3477,22 @@ input:invalid {
   color: #888888;
 }
 
-.breadcrumbs__link--active {
+a.breadcrumbs__link--active {
   color: #00adef;
 }
 
-.breadcrumbs__link:not(:last-child) {
+a.breadcrumbs__link:not(:last-child) {
   margin-right: 28px;
 }
 
-.breadcrumbs__link:not(:last-child)::before {
+a.breadcrumbs__link:not(:last-child)::before {
   content: "/";
   position: absolute;
   top: 0;
   right: -18px;
 }
 
-.breadcrumbs__link:hover, .breadcrumbs__link:focus {
+a.breadcrumbs__link:hover, a.breadcrumbs__link:focus {
   color: #00adef;
   outline: none;
 }
