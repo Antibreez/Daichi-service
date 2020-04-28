@@ -3415,7 +3415,7 @@ a {
 
 .button {
   display: block;
-  height: 48px;
+  min-height: 48px;
   padding: 15px 40px;
   font-size: 15px;
   line-height: 17px;
@@ -3711,7 +3711,8 @@ a.breadcrumbs__link:hover, a.breadcrumbs__link:focus {
 }
 
 .warranty-registration__link {
-  width: 330px;
+  display: inline-block;
+  min-width: 330px;
 }
 
 @media (max-width: 1399px) {
@@ -3779,7 +3780,7 @@ a.breadcrumbs__link:hover, a.breadcrumbs__link:focus {
     text-align: center;
   }
   .warranty-registration__link {
-    width: 260px;
+    min-width: 260px;
     padding: 15px 20px;
   }
 }
@@ -4008,7 +4009,6 @@ a.breadcrumbs__link:hover, a.breadcrumbs__link:focus {
     line-height: 28px;
   }
   .service__item-link {
-    width: 215px;
     padding: 15px 20px;
   }
   .service__item:first-child {
