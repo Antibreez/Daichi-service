@@ -3356,6 +3356,7 @@ html {
 body {
   min-width: 320px;
   margin: 0 auto;
+  font-family: "Gotham Pro", "Arial", "Helvetica", "Helvetica CY", "Nimbus Sans";
   font-style: normal;
 }
 
