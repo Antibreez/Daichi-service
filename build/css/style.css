@@ -3855,6 +3855,13 @@ a.breadcrumbs__link:hover, a.breadcrumbs__link:focus {
 
 .service__item {
   width: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .service__item-header {
@@ -3889,6 +3896,16 @@ a.breadcrumbs__link:hover, a.breadcrumbs__link:focus {
 }
 
 .service__item-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 50px 60px;
   text-align: center;
   background-color: #f6f6f6;
@@ -3915,6 +3932,7 @@ a.breadcrumbs__link:hover, a.breadcrumbs__link:focus {
 .service__item-link {
   width: 330px;
   margin: 0 auto;
+  margin-top: auto;
 }
 
 @media (max-width: 1399px) {
